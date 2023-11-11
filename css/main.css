@@ -319,15 +319,11 @@ footer button:hover {
   .image-right {
     background: url(../images/x-ray.png) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background: fixed;
   }
   .image-left {
     background: url(../images/earbud-XRay_color.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 50%;
-    background: fixed;
   }
   .image-drag {
     background-color: #666;
@@ -357,16 +353,16 @@ footer button:hover {
 .image-right {
   background: url(../images/x-ray.png) no-repeat;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  /* background-position: center center; */
+  /* background-attachment: fixed; */
 }
 
 .image-left {
   background: url(../images/earbud-XRay_color.jpg) no-repeat;
   background-size: cover;
-  background-position: center center;
+  /* background-position: center center; */
   width: 50%;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .image-drag {
