@@ -1,0 +1,42 @@
+.reviews-section {
+    background-color: rgb(67, 64, 64); /* Light grey background */
+    padding: 40px;
+    text-align: center;
+}
+
+.review {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+.review-content {
+    text-align: left;
+}
+
+.review-text {
+    font-style: italic;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.review-rating {
+    color: #ffcc00; /* Gold color for stars */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.star {
+    cursor: default;
+}
+
+.review-author {
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+    font-size: 14px;
+}

@@ -111,3 +111,75 @@ function close(){
 
 })();
 
+(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const animateFromLeft = (element) => {
+        gsap.from(element, {
+            x: -100, // start from left
+            opacity: 0,
+            scrollTrigger: {
+                trigger: element,
+                toggleActions: "restart pause resume pause"
+            },
+            duration: 1
+        });
+    };
+
+    const animateFromRight = (element) => {
+        gsap.from(element, {
+            x: 100, // start from right
+            opacity: 0,
+            scrollTrigger: {
+                trigger: element,
+                toggleActions: "restart pause resume pause"
+            },
+            duration: 1
+        });
+    };
+
+    const animateFromBottom = (element) => {
+        gsap.from(element, {
+            y: 100, // start from bottom
+            opacity: 0,
+            scrollTrigger: {
+                trigger: element,
+                toggleActions: "restart pause resume pause"
+            },
+            duration: 1
+        });
+    };
+
+    // Apply the animations
+    document.querySelectorAll('.left-side').forEach(animateFromLeft);
+    document.querySelectorAll('.right-side').forEach(animateFromRight);
+    document.querySelectorAll('.feature').forEach(animateFromBottom);
+})();
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
+
+    const navLinks = document.querySelectorAll("#main-nav a");
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            let target = e.target.getAttribute('href');
+            switch(target) {
+                case '#features':
+                    gsap.to(window, {duration: 1, scrollTo: {y: ".feature", offsetY: 60}});
+                    break;
+                case '#design':
+                    gsap.to(window, {duration: 1, scrollTo: {y: "#x-ray", offsetY: 60}});
+                    break;
+                case '#reviews':
+                    gsap.to(window, {duration: 1, scrollTo: {y: ".reviews-section", offsetY: 60}});
+                    break;
+                // Add more cases for other links if necessary
+            }
+        });
+    });
+});
+

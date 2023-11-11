@@ -63,7 +63,7 @@
 
 #outerShell {
     max-width: 1200px;
-    border: solid 1px #666;
+    border: solid 1px rgb(102, 102, 102);
 }
 
 #imageCon {
@@ -82,21 +82,25 @@
 .image-right {
     background: url(../images/x-ray.png) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  
 }
 
 .image-left {
     background: url(../images/earbud-XRay_color.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
+   
     width: 50%;
-    background-attachment: fixed;
+    
 }
 
 .image-drag {
-    background-color: #666;
+    background-color: #ca1212;
     left: 50%;
     width: 5px;
     cursor: pointer;
+}
+
+.x-ray {
+   
+    padding: 200px;
 }
