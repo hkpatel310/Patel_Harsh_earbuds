@@ -1,42 +1,54 @@
-.reviews-section {
-    background-color: rgb(67, 64, 64); /* Light grey background */
-    padding: 40px;
-    text-align: center;
-}
-
+/* Review Section Styling */
 .review {
-    background-color: white;
-    margin: 20px auto;
+    margin-bottom: 20px;
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 10px;
-    max-width: 600px;
+    background-color: #f8f9fa; /* Light background for the review */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .review-content {
-    text-align: left;
+    text-align: center;
 }
 
 .review-text {
-    font-style: italic;
-    color: #333;
     font-size: 16px;
-    line-height: 1.6;
+    color: #333; /* Dark text for better readability */
+    margin-bottom: 10px;
 }
 
-.review-rating {
+.review-rating i {
     color: #ffcc00; /* Gold color for stars */
-    font-size: 18px;
-    margin: 10px 0;
-}
-
-.star {
-    cursor: default;
 }
 
 .review-author {
-    font-weight: bold;
+    font-style: italic;
     color: #666;
     margin-top: 10px;
-    font-size: 14px;
+}
+
+/* Load More Button Styling */
+.load-more {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.load-more button {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.load-more button:hover {
+    background-color: #0056b3; /* Slightly darker shade on hover */
+    transform: scale(1.05);
+}
+
+.load-more button:focus {
+    outline: none;
 }

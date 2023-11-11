@@ -182,4 +182,15 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const loadMoreBtn = document.getElementById('loadMore');
+    const hiddenReviews = document.querySelectorAll('.hidden');
+
+    loadMoreBtn.addEventListener('click', function() {
+        hiddenReviews.forEach(review => {
+            review.classList.remove('hidden');
+        });
+        loadMoreBtn.style.display = 'none'; // Hide the button after clicking
+    });
+});
 
