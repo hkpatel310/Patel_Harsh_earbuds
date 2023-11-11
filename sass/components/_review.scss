@@ -2,39 +2,43 @@
 .review {
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Light background for the review */
+    background-color: #ebf2f9; /* Light background for the review */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-}
-
-.review-content {
+  }
+.reviews-section h2 {
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
 }
-
-.review-text {
+  .review-content {
+    text-align: center;
+  }
+  
+  .review-text {
     font-size: 16px;
     color: #333; /* Dark text for better readability */
     margin-bottom: 10px;
-}
-
-.review-rating i {
+  }
+  
+  .review-rating i {
     color: #ffcc00; /* Gold color for stars */
-}
-
-.review-author {
+  }
+  
+  .review-author {
     font-style: italic;
     color: #666;
     margin-top: 10px;
-}
-
-/* Load More Button Styling */
-.load-more {
+  }
+  
+  /* Load More Button Styling */
+  .load-more {
     text-align: center;
     margin-top: 30px;
-}
-
-.load-more button {
-    background-color: #007bff; /* Primary color */
+  }
+  
+  .load-more button {
+    background-color: #25394e; /* Primary color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -42,13 +46,14 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
-}
-
-.load-more button:hover {
+  }
+  
+  .load-more button:hover {
     background-color: #0056b3; /* Slightly darker shade on hover */
     transform: scale(1.05);
-}
-
-.load-more button:focus {
+  }
+  
+  .load-more button:focus {
     outline: none;
-}
+  }
+  
