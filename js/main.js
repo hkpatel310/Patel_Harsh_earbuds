@@ -30,7 +30,7 @@ function close(){
     const context = canvas.getContext("2d");
     canvas.width = 1920;
     canvas.height = 1080;
-    const frameCount = 300; // Updated frame count
+    const frameCount = 300; 
     const images = [];
 
     const buds = {
@@ -44,14 +44,14 @@ function close(){
     }
 
     gsap.to(buds, {
-        frame: frameCount - 1, // Updated frame count
+        frame: frameCount - 1, 
         snap: "frame",
         scrollTrigger: {
             trigger: "#explode-view",
             pin: true,
             scrub: 1,
             start: "top top",
-            end: "+=8000" // Increase this value to extend the scroll distance
+            end: "+=8000" 
         },
         onUpdate: render
     });
@@ -177,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 case '#reviews':
                     gsap.to(window, {duration: 1, scrollTo: {y: ".reviews-section", offsetY: 60}});
                     break;
-                // Add more cases for other links if necessary
+                
             }
         });
     });
